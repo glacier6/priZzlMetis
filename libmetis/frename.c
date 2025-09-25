@@ -34,7 +34,8 @@ FRENAME(
     metis_partgraphrecursive__
 ) 
     
-
+// zzlNOTE: 1. FRENAME 是让多个函数名字指向同一个执行体
+// zzlNOTE: 而且注意这个版本的METIS有问题，ufactor参数无效，但ubvec正常生效
 FRENAME(
     METIS_PartGraphKway,
     (idx_t *nvtxs, idx_t *ncon, idx_t *xadj, idx_t *adjncy, idx_t *vwgt, 
